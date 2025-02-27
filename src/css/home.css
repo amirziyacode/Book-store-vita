@@ -114,3 +114,26 @@ li:hover{
     color:black;
     cursor: pointer;
 }
+
+@media screen and (min-width:768px){
+    .big-text-black{
+        font-weight: bold;
+        width: 60%;
+        height: 120px;
+        font-size: 60px;
+    }
+    .img-book{
+        width: 80%;
+    }
+    .btn-outline{
+        width: 115px;
+        text-align: center;
+        margin-top: 1.5%;
+        height: 55px;
+        border: 2px solid red;
+        background-color: white;
+        border-radius: 16px;
+        margin-left: 29%;
+        transition: background-color 0.8s;
+    }
+}
