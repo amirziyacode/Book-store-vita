@@ -114,7 +114,7 @@ li:hover{
     color:black;
     cursor: pointer;
 }
-
+/* Responsive */
 @media screen and (min-width:768px){
     .big-text-black{
         font-weight: bold;
