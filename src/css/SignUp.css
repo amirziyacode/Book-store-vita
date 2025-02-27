@@ -1,0 +1,56 @@
+.form{
+    width: 66%;
+    margin-top: 15%;
+    margin-left: 33%;
+}
+h2{
+    font-size:30px
+}
+.form-title-signUp{
+    display: flex;
+    width: 45%;
+    margin-left: 7%;
+    flex-direction: row;
+    height:20%;
+}
+.form-input{
+    width:50%;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+}
+input{
+    padding: 12px;
+    margin: 10px;
+    width: 55%;
+    border-radius:10px;
+    border: 2px solid black;
+}
+input::placeholder{
+    font-size:15px;
+    font-family: sans-serif;
+}
+button{
+    margin-top: 3%;
+    width: 180px;
+    border: none;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border-radius:17px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.8s;
+}
+button:hover{
+    opacity: 70%;
+    cursor: pointer;
+}
+.login-btn{
+    color: red;
+}
+.login-btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

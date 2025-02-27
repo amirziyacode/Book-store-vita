@@ -13,7 +13,7 @@ function NavBar(){
                 <li>BookStroes</li>
                 <li onClick={() =>  navigate('/login')}>Login</li>
             </ul>
-            <button class="btn-outline"><p class="text-btn">Sing Up</p></button>
+            <button class="btn-outline" onClick={() => navigate('/SingUp')}><p class="text-btn">Sing Up</p></button>
         </nav>
         </>
     )

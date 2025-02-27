@@ -14,7 +14,7 @@ function Login(){
             <div className="form-input">
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
-                <p>You don't have an account? <span className="login-btn" onClick={() =>navigate('/')}>SingUp</span></p>
+                <p>You don't have an account? <span className="login-btn" onClick={() =>navigate('/SingUp')}>SingUp</span></p>
                 <button>Login</button>
             </div>
         </div>
