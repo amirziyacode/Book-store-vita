@@ -9,7 +9,7 @@ function NavBar(){
         <nav>
             <h2 className="logo"><span style={{color:"red"}}>Book</span>Store</h2>
             <ul className="nav-ite">
-                <li>BestSellers</li>
+                <li>BestSeller</li>
                 <li>BookStroes</li>
                 <li onClick={() =>  navigate('/login')}>Login</li>
             </ul>
