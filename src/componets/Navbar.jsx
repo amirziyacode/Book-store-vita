@@ -10,7 +10,7 @@ function NavBar(){
             <h2 className="logo"><span style={{color:"red"}}>Book</span>Store</h2>
             <ul className="nav-ite">
                 <li>BestSeller</li>
-                <li>BookStroes</li>
+                <li onClick={() => navigate('/bookstore')}>BookStroes</li>
                 <li onClick={() =>  navigate('/login')}>Login</li>
             </ul>
             <button class="btn-outline" onClick={() => navigate('/SingUp')}><p class="text-btn">Sing Up</p></button>
