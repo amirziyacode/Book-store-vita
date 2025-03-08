@@ -31,22 +31,43 @@ img{
     margin-left: 13px;
     display: flex;
     align-items: center;
-    margin-bottom: 0.5rem;
+    height: 10px;
 }
 .stars{
     width: 1rem;
     height: 1rem;
 }
 
-
 .card:hover{
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     transform: translateY(-3px);
 }
-
+.price{
+    display:flex;
+    align-items: center;
+    justify-items:space-between;
+}
 .prices-discount{
     display: flex;
     margin-top: 25px;
     padding: 10px;
     align-items: center;    
+}
+.btn-buy-book{
+    background-color: #4F46E5;
+    color: white;
+    width: 40px;
+    margin-left: 165px;
+    height: 40px;
+    padding: 0.5rem;
+    align-items: center;
+    border-radius: 9999px;
+    transition: background-color 0.2s ease-in-out;
+}
+.icon-buy{
+    width: 1rem;
+    height: 1rem;
+}
+.btn-buy-book:hover{
+    background-color: color-mix(in srgb, #4F46E5, transparent 10%);
 }

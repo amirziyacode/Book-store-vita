@@ -1,5 +1,5 @@
 import React from "react";
-import { FiStar} from 'react-icons/fi';
+import { FiStar,FiShoppingCart} from 'react-icons/fi';
 import "../css/BookCard.css"
 
 function BookCard(){
@@ -12,21 +12,21 @@ function BookCard(){
             <p className="title">The Midnight Library</p>
             <p className="author">Matt Haig</p>
             <div className="stars-rating">
-            {/* {[...Array(5)].map((_, i) => (
+            {[...Array(5)].map((_, i) => (
             <FiStar 
-              key={i} 
-              style={`${i < 3 ? {coor:"yellow",fill:"currentColor"} : {color:"#d1d5db"}}`}
-              className="stars" 
+            key={i} 
+            style={i < 5 ? {color:"#F59E0B",fill:"currentcolor"} : {color:"#d1d5db"}}
+            className="stars" 
             />
-                ))}
-                <span className="text-xs text-gray-500 ml-1"></span> */}
+            ))}
+                <span style={{fontSize:"0.75rem",color:"#6b7280",marginLeft:"0.25rem"}}>(4.0) </span>
             </div>
-            <div>
-                <div className="price">
+            <div className="price">
+                <div>
                     {15 ? (
                         <div className="prices-discount">
-                        <span style={{color:"#9ca3af",textDecoration:"line-through",fontSize:"0.875rem",marginRight:"10px"}}>$24.99</span>
-                        <span style={{color:'#4F46E5',fontWeight:"bold"}}>
+                        <span style={{color:"#9ca3af",textDecoration:"line-through",fontSize:"0.9rem",marginRight:"10px"}}>$24.99</span>
+                        <span style={{color:'#4F46E5',fontWeight:"bold",fontSize:"18px"}}>
                             ${(24.99 * (1 - 15 / 100)).toFixed(2)}
                         </span>
                         </div>
@@ -34,8 +34,10 @@ function BookCard(){
                         <span tyle={{color:"#4F46E5",fontWeight:"bold"}}>24.99</span>
                     )}
                 </div>
+                <button className="btn-buy-book">
+                    <FiShoppingCart className="icon-buy" />
+                </button>
             </div>
-
         </div>
         </>
     )   
