@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import BookCard from './BookCard';
 import { bestSellersData } from '../model/books';
-import "../css/BookStore.css"
+import "../css/BookStore.css";
+
 function Bookstore(){
     const [activeCategory, setActiveCategory] = useState('all');
     const categories = ['all', 'fiction', 'non-fiction', 'mystery', 'sci-fi', 'romance'];
@@ -12,6 +13,7 @@ function Bookstore(){
 
     return(
         <>
+        <div className="container-books">
             <div style={{textAlign:"center",marginBottom:"3rem"}}>
                 <h1 className="title">Best Books</h1>
                 <p className="title-discover">
@@ -32,6 +34,12 @@ function Bookstore(){
                 ))}
                 </div>
             </div>
+            <div className="books">
+                    {filteredBooks.map(book => (
+                        <BookCard key={book.id} book={book} />
+                        ))}
+                </div>
+        </div>
         </>
     )
 }

@@ -15,7 +15,7 @@ const  BookCard = ({book}) => {
                 {discount}% OFF
             </div>
             )}
-            <p className="title">{title}</p>
+            <p className="title-card">{title}</p>
             <p className="author">{author}</p>
             <div className="stars-rating">
             {[...Array(5)].map((_, i) => (
@@ -37,7 +37,7 @@ const  BookCard = ({book}) => {
                         </span>
                         </div>
                     ):(
-                        <span tyle={{color:"#4F46E5",fontWeight:"bold"}}>${price.toFixed(2)}</span>
+                        <span className="prices-no-discount">${price.toFixed(2)}</span>
                     )}
                 </div>
                 <button className="btn-buy-book">

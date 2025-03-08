@@ -1,3 +1,13 @@
+.container-books{
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+  padding-top: 2rem; 
+  padding-bottom: 2rem; 
+}
+
 .title{
     font-size: 55px;
     line-height: 40px;
@@ -26,16 +36,43 @@
     white-space: nowrap; 
 }
 
+.books{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
 @media (min-width: 640px) {
-    .container {
+    .container-books {
       padding-left: 1.5rem; 
       padding-right: 1.5rem; 
     }
   }
   
   @media (min-width: 1024px) {
-    .container {
+    .container-books {
       padding-left: 2rem; 
       padding-right: 2rem;
     }
   }
+/* Small screens (sm:) */
+@media (min-width: 640px) {
+  .books {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium screens (md:) */
+@media (min-width: 768px) {
+  .books {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large screens (lg:) */
+@media (min-width: 1024px) {
+  .books{
+      grid-template-columns: repeat(4, 1fr);
+  }
+}    
