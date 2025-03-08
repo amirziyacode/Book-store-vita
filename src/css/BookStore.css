@@ -1,0 +1,41 @@
+.title{
+    font-size: 55px;
+    line-height: 40px;
+    font-weight: 800;
+    color:#1E293B;
+}
+.title-discover{
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: gray;
+    height: 4px;
+    padding-top: 13px;
+}
+
+.book-tags{
+    padding-left: 1rem; 
+    padding-right: 1rem; 
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem; 
+    border-radius: 9999px; 
+    font-size: 0.875rem; 
+    font-weight: 500; 
+    text-transform: capitalize; 
+    white-space: nowrap; 
+}
+
+@media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; 
+      padding-right: 1.5rem; 
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; 
+      padding-right: 2rem;
+    }
+  }

@@ -7,7 +7,7 @@ function NavBar(){
     return (
         <>
         <nav>
-            <h2 className="logo"><span style={{color:"red"}}>Book</span>Store</h2>
+            <h2 className="logo" onClick={() => navigate('/')}><span style={{color:"red"}}>Book</span>Store</h2>
             <ul className="nav-ite">
                 <li>BestSeller</li>
                 <li onClick={() => navigate('/bookstore')}>BookStroes</li>

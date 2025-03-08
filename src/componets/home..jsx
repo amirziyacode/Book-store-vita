@@ -1,10 +1,8 @@
 import React from "react"
-import NavBar from "./Navbar";
 import "../css/home.css";
 function Home() {
     return (
         <>
-        <NavBar/>
         <div className="home-body">
             <div className="home-text-btn">
                 <p className="big-text-gray">
